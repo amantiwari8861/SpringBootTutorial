@@ -1,0 +1,28 @@
+spring:
+
+  jpa:
+    database-platform: "org.hibernate.dialect.MySQL5Dialect"
+    hibernate:
+      ddl-auto: update
+    open-in-view: off
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: "jdbc:mysql://localhost:3306/students"
+#    hikari:
+#      auto-commit: false
+#  servlet:
+#    multipart:
+#      enabled: true
+#      max-file-size: 200MB
+#      max-request-size: 205MB
+#      file-size-threshold: 2KB
+#server:
+#  error:
+#    whitelabel:
+#      enabled: false
+#    path: "/error"
+#
+

@@ -1,0 +1,40 @@
+Mon-Fri: 09:00 PM - 10:00 PM IST
+Sat-Sun: 09:00 AM - 11:00 AM IST
+
+Let's create the next amazon.com
+
+amazon.com is an e-commerce website.
+It is a multi-vendor website.
+
+electronic-commerce
+
+group id/project id - com.amazon
+
+artifact id/microservice/project part
+-------------------------------------
+order
+invoice
+inventory
+payment
+customer
+seller
+logistics
+
+
+
+Requirement
+-----------
+jdk 8/11/17
+maven
+vs code > Extension Pack for Java, Spring Initializr Java Support
+mysql
+
+
+
+
+
+
+
+
+
+

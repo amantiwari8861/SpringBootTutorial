@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+X:\SpringBoot\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2289912964.index
+\TestSTS\src\main\java

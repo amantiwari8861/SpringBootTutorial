@@ -1,0 +1,22 @@
+CRUD operation in Spring Boot
+
+C - Create/Save/Store records/data into tables
+Ex. insert into tablename values(......);
+
+R - Retrieve/Select data from tables
+Ex. select * from tablename where condition;
+
+U - Update record/data into tables
+Ex. update tablename set columnname=value where condition;
+
+D - Delete record/data from tables
+Ex. delete from tablename where condition;
+
+
+JPA (Java Persistance API)
+ORM (Object Relational Mapping)
+
+
+
+
+ 

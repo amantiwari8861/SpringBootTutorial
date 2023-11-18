@@ -1,0 +1,27 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+body{
+	background-image:url("../images/1.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 40% 100%;
+}
+form{
+	border:1px solid gray;
+	border-radius:15px;
+	padding:20px;
+	width:400px;
+	margin:150px auto;
+}
+form input[type="submit"]
+{
+	width: 50px;
+	background-color: orange;
+	border:none;
+	border-radius:5px;
+	padding:8px;
+}

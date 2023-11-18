@@ -1,0 +1,42 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 23937012948-u62qla98s4hmuuh9pg9hgluqdh0sqcc4.apps.googleusercontent.com
+            clientSecret: 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
+          github:
+            clientId: 20bc0913043120290611
+            client-secret: 9c695142fb2f2ff6be8258204db11fd0cbe6daf9
+          facebook:
+            clientId: 160269500455978
+            client-secret: c9ac17a4f648aeea80369581a4fa18bb
+    user:
+      name: "ritesh"
+      password: "1234"
+      roles: "admin"
+  mvc:
+    view:
+      prefix: "/views/"
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/learnSecurity?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    # database-platform: org.hibernate.dialect.MySQL8Dialect
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE

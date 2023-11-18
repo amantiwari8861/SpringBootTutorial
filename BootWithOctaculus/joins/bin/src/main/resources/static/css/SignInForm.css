@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo-container {
+  width: 100%;
+  text-align: center;
+  flex-shrink: 0;
+}
+#logo {
+  height: 80px;
+  width: 100px;
+}
+#signin-form {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+label {
+  font-size: 1.3rem;
+}
+input {
+  height: 34px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+.google,
+.facebook,
+.github,
+#sign-in{
+  text-align: center;
+  padding: 7px 5px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+#sign-in
+{
+    height: 50px;
+    background-color: orange;
+    color: white;
+}
+.github
+{
+    color: white;
+    background-color: black;
+}
+.facebook
+{
+    color: white;
+    background-color: blue;
+}
+.google
+{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+#domain{
+position: absolute;
+bottom: 0px;
+font-size: 1.3rem;
+}
+#role{
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 2px;
+  overflow: hidden;
+}
+#msg{
+  text-align: center;
+}
