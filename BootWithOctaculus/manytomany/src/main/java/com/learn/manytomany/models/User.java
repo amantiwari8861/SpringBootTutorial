@@ -14,6 +14,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table
 public class User
@@ -33,9 +35,10 @@ public class User
     @ManyToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
 	@JoinTable(
         name = "user_role",
-        joinColumns = @JoinColumn(name = "user_id",referencedColumnName = "id"),
-        inverseJoinColumns = @JoinColumn(name = "role_id",referencedColumnName = "id")
+        joinColumns = {@JoinColumn(name = "user_id",referencedColumnName = "id")},
+        inverseJoinColumns ={ @JoinColumn(name = "role_id",referencedColumnName = "id")}
         )
+    @JsonManagedReference
     private Set<Role> roles;
 
     public Integer getId() {

@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 @Table
 public class Role {
@@ -20,7 +22,8 @@ public class Role {
 	private String roleName;
 
 	@ManyToMany(mappedBy = "roles",fetch = FetchType.LAZY)
-    Set<User> employees;
+    @JsonBackReference
+	private Set<User> employees;
 	
 	public Role() {
 		super();

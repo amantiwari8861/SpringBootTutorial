@@ -53,7 +53,7 @@ public class MainController {
 		}
 		user.setRoles(roles);
 		System.out.println(user);
-        userRepository.save(user);
+		userRepository.save(user);
 		model.addAttribute("msg", "Registered Succesfully!!");
         
         return "register";
