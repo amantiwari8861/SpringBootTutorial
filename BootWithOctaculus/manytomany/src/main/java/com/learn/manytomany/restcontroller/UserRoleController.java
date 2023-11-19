@@ -3,6 +3,7 @@ package com.learn.manytomany.restcontroller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,19 +17,19 @@ import com.learn.manytomany.repositories.RoleRepository;
 import com.learn.manytomany.repositories.UserRepository;
 
 @RestController
-@RequestMapping("/user/role")
+@RequestMapping("/user/role/")
 public class UserRoleController 
 {
     @Autowired
     private UserRepository userRepository;
     @Autowired
     private RoleRepository roleRepository;
-    public UserRoleController(UserRepository userRepository, RoleRepository roleRepository) {
-        this.userRepository = userRepository;
-        this.roleRepository = roleRepository;
-    }
+    // public UserRoleController(UserRepository userRepository, RoleRepository roleRepository) {
+    //     this.userRepository = userRepository;
+    //     this.roleRepository = roleRepository;
+    // }
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public User saveUserWithRole(@RequestBody User user)
     {
         return userRepository.save(user);
@@ -38,8 +39,8 @@ public class UserRoleController
     {
         return userRepository.findAll();
     }
-    @GetMapping("/{id}")
-    public User findUser(int id)
+    @GetMapping("/findbyid/{id}")
+    public User findUser(@PathVariable Integer id)
     {
         return userRepository.findById(id).orElse(null);
     }
